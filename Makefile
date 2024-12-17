@@ -8,7 +8,7 @@ CC = cc
 
 FLAGS = -Wall -Wextra -Werror
 
-HEADER = ft_printf.h
+HEADER = push_swap.h
 
 all : $(NAME)
 
