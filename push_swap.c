@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmirje <mmirje@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 15:49:19 by mmirje            #+#    #+#             */
-/*   Updated: 2024/12/21 11:30:25 by mmirje           ###   ########.fr       */
+/*   Created: 2024/12/17 16:34:25 by mmirje            #+#    #+#             */
+/*   Updated: 2024/12/21 11:43:59 by mmirje           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#include "push_swap.h"
 
-# include <limits.h>
-# include <stdbool.h>
-# include <stddef.h>
-
-typedef struct s_node
+int	main(int argc, char **argv)
 {
-	int				num;
-	int				index;
-	int				push_cost;
-	bool			above_median;
-	bool			cheap_node;
-	struct s_node	*next;
-	struct s_node	*prev;
-}					t_node;
+	t_node	*a;
+	t_node	*b;
+	char	res;
 
-
-#endif
+	a = NULL;
+	b = NULL;
+	res = NULL;
+	if (argc == 1 || (argc == 2 && !argv[1]))
+		return (1);
+	if (argc == 2 )
+		res = ft_spilt(argv[1], ' ');
+	else
+		stack_a(&a, argv + 1);
+}

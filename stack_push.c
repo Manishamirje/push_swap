@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.h                                        :+:      :+:    :+:   */
+/*   stack_push.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmirje <mmirje@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/17 15:49:19 by mmirje            #+#    #+#             */
-/*   Updated: 2024/12/21 11:30:25 by mmirje           ###   ########.fr       */
+/*   Created: 2024/12/21 11:49:33 by mmirje            #+#    #+#             */
+/*   Updated: 2024/12/21 12:12:48 by mmirje           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP_H
-# define PUSH_SWAP_H
+#include "push_swap.h"
 
-# include <limits.h>
-# include <stdbool.h>
-# include <stddef.h>
-
-typedef struct s_node
+stack_a(t_node **a, char **argv)
 {
-	int				num;
-	int				index;
-	int				push_cost;
-	bool			above_median;
-	bool			cheap_node;
-	struct s_node	*next;
-	struct s_node	*prev;
-}					t_node;
+	long	num;
+	int		i;
 
-
-#endif
+	i = 0;
+	while (argv[i])
+	{
+		
+	}
+	
+}
