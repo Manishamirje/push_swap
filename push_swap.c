@@ -6,7 +6,7 @@
 /*   By: mmirje <mmirje@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 16:34:25 by mmirje            #+#    #+#             */
-/*   Updated: 2024/12/21 11:43:59 by mmirje           ###   ########.fr       */
+/*   Updated: 2024/12/22 15:35:28 by mmirje           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	main(int argc, char **argv)
 {
-	t_node	*a;
-	t_node	*b;
-	char	res;
+	t_stack_node	*a;
+	t_stack_node	*b;
+	char			res;
 
 	a = NULL;
 	b = NULL;

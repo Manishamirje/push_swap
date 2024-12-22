@@ -6,7 +6,7 @@
 /*   By: mmirje <mmirje@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/17 15:49:19 by mmirje            #+#    #+#             */
-/*   Updated: 2024/12/21 11:30:25 by mmirje           ###   ########.fr       */
+/*   Updated: 2024/12/22 15:38:43 by mmirje           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@
 # include <stdbool.h>
 # include <stddef.h>
 
-typedef struct s_node
+typedef struct s_stack_node
 {
-	int				num;
-	int				index;
-	int				push_cost;
-	bool			above_median;
-	bool			cheap_node;
-	struct s_node	*next;
-	struct s_node	*prev;
-}					t_node;
+	int					value;
+	int					index;
+	int					push_cost;
+	bool				above_median;
+	bool				cheap_node;
+	struct s_stack_node	*next;
+	struct s_stack_node	*prev;
+}					t_stack_node;
 
 
 #endif
